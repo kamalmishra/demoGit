@@ -48,5 +48,11 @@ public class LandingPageStepDefinition {
 		Thread.sleep(2000);
 		lp.addCart();
 	}
+	@When("Added {string} items of the selected product to cart")
+	public void Added_items_products(String quantity) throws InterruptedException {
+		lp.incrementQuantity(Integer.parseInt(quantity));
+		Thread.sleep(2000);
+		lp.addCart();
+	}
 	
 }
