@@ -43,5 +43,15 @@ public class CheckoutPageStepDefinition {
 		System.out.println(expProductName);
 		Assert.assertEquals(testcontextSetup.landingPageproductName, expProductName);
 	}
+	@Then("^User proceeds to Checkout and validate the (.+) items in checkout page$")
+	public void user_proceeds_to_checkout1(String name) throws InterruptedException
+	{
+		
+		cp.checkoutItem();
+		//Assertion to extract name from screen and compare with name
+		String expProductName=cp.getProdutName().split("-")[0].trim();
+		System.out.println(expProductName);
+		Assert.assertEquals(testcontextSetup.landingPageproductName, expProductName);
+	}
 
 }
