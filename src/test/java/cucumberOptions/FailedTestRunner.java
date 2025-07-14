@@ -14,7 +14,10 @@ public class FailedTestRunner extends AbstractTestNGCucumberTests{
 	@Override
 	@DataProvider(parallel=true)
 	public Object[][] scenarios(){
-		
+		System.out.println("print failed tc");
+		System.out.println("print passed tc");
+		System.out.println("print invalid tc");
+		System.out.println("print valid tc");
 		return super.scenarios();
 		
 	}

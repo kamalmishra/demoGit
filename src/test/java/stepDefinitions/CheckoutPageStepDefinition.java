@@ -26,7 +26,10 @@ public class CheckoutPageStepDefinition {
 		Assert.assertTrue(cp.verifyPromobtn());
 		System.out.println(cp.verifyPromobtn());
 		Assert.assertTrue(cp.verifyplaceOrderbtn());
-		System.out.println(cp.verifyplaceOrderbtn());
+		System.out.println("A");
+		System.out.println("B");
+		System.out.println("C");
+		System.out.println("D");
 		
 	}
 
